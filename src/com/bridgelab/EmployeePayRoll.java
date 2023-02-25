@@ -8,19 +8,27 @@ public class EmployeePayRoll {
 		a=ran.nextInt(2);
 		return a;
 	}
-	public static void Check(int a) {
+	public static void Check(int a, int b) {
 		int num=Attendance(a);
-		if(Attendance(1)==1) {
+		int num1=Attendance(b);
+		if(num==1 && num1==0) {
 			System.out.println("employee is present");
 			System.out.println("Daily wage of employee is "+(20*8));
-		}else {
+		}else if(num==0 && num1==1) {
+			System.out.println("employee is part time");
+			System.out.println("employee part time wage is "+(20*4));
+		}
+		else {
 			System.out.println("employee is absent");
 		}
-	}
+		}
+	 
+		
+	
 
 	public static void main(String[] args) {
 		System.out.println("welcome to employee wage program ");
-		Check(Attendance(0));
+		Check(Attendance(1),2);
 
 	}
 
