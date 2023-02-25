@@ -38,6 +38,10 @@ public class EmployeePayRoll {
 	public static void main(String[] args) {
 		System.out.println("welcome to employee wage program ");
 		Check(Attendance(0), 1);
+		int TotalWorkDay=20;
+		int DailyWage=20*8;
+		int MonthlyWage=TotalWorkDay*DailyWage;
+		System.out.println("month wage for total workinday is 20 ::: "+MonthlyWage);
 
 	}
 }
