@@ -12,6 +12,7 @@ public class EmployeePayRoll {
 		int num=Attendance(a);
 		if(Attendance(1)==1) {
 			System.out.println("employee is present");
+			System.out.println("Daily wage of employee is "+(20*8));
 		}else {
 			System.out.println("employee is absent");
 		}
